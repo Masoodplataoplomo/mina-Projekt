@@ -30,171 +30,205 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnStartaSpelet = new System.Windows.Forms.Button();
+            this.btnSpelaIgen = new System.Windows.Forms.Button();
+            this.gbxSpelet = new System.Windows.Forms.GroupBox();
+            this.tbxMinaResultat = new System.Windows.Forms.TextBox();
+            this.btnGissa = new System.Windows.Forms.Button();
+            this.tbxGissa = new System.Windows.Forms.TextBox();
+            this.lblResultat = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.gbxSpeldata = new System.Windows.Forms.GroupBox();
+            this.lbxStörstaTalet = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.lblDatornsTal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.gbxSpelet.SuspendLayout();
+            this.gbxSpeldata.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(175, 52);
+            this.pictureBox1.Location = new System.Drawing.Point(131, 45);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(450, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(338, 44);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "";
             // 
-            // listBox1
+            // btnStartaSpelet
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(324, 46);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 84);
-            this.listBox1.TabIndex = 1;
+            this.btnStartaSpelet.Location = new System.Drawing.Point(401, 106);
+            this.btnStartaSpelet.Margin = new System.Windows.Forms.Padding(2);
+            this.btnStartaSpelet.Name = "btnStartaSpelet";
+            this.btnStartaSpelet.Size = new System.Drawing.Size(68, 20);
+            this.btnStartaSpelet.TabIndex = 2;
+            this.btnStartaSpelet.Text = "Starta spelet";
+            this.btnStartaSpelet.UseVisualStyleBackColor = true;
+            this.btnStartaSpelet.Click += new System.EventHandler(this.btnStartaSpelet_Click);
             // 
-            // button1
+            // btnSpelaIgen
             // 
-            this.button1.Location = new System.Drawing.Point(535, 120);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Starta spelet";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSpelaIgen.Location = new System.Drawing.Point(401, 146);
+            this.btnSpelaIgen.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSpelaIgen.Name = "btnSpelaIgen";
+            this.btnSpelaIgen.Size = new System.Drawing.Size(68, 20);
+            this.btnSpelaIgen.TabIndex = 3;
+            this.btnSpelaIgen.Text = "Spela igen";
+            this.btnSpelaIgen.UseVisualStyleBackColor = true;
+            this.btnSpelaIgen.Click += new System.EventHandler(this.btnSpelaIgen_Click);
             // 
-            // button2
+            // gbxSpelet
             // 
-            this.button2.Location = new System.Drawing.Point(535, 167);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Spela igen";
-            this.button2.UseVisualStyleBackColor = true;
+            this.gbxSpelet.Controls.Add(this.lblDatornsTal);
+            this.gbxSpelet.Controls.Add(this.tbxMinaResultat);
+            this.gbxSpelet.Controls.Add(this.btnGissa);
+            this.gbxSpelet.Controls.Add(this.tbxGissa);
+            this.gbxSpelet.Controls.Add(this.lblResultat);
+            this.gbxSpelet.Controls.Add(this.label3);
+            this.gbxSpelet.Controls.Add(this.label2);
+            this.gbxSpelet.Controls.Add(this.label1);
+            this.gbxSpelet.Location = new System.Drawing.Point(131, 180);
+            this.gbxSpelet.Margin = new System.Windows.Forms.Padding(2);
+            this.gbxSpelet.Name = "gbxSpelet";
+            this.gbxSpelet.Padding = new System.Windows.Forms.Padding(2);
+            this.gbxSpelet.Size = new System.Drawing.Size(338, 118);
+            this.gbxSpelet.TabIndex = 4;
+            this.gbxSpelet.TabStop = false;
+            this.gbxSpelet.Text = "Spelet";
             // 
-            // groupBox1
+            // tbxMinaResultat
             // 
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.listBox1);
-            this.groupBox1.Location = new System.Drawing.Point(175, 205);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(450, 136);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Spelet";
+            this.tbxMinaResultat.Location = new System.Drawing.Point(244, 46);
+            this.tbxMinaResultat.Multiline = true;
+            this.tbxMinaResultat.Name = "tbxMinaResultat";
+            this.tbxMinaResultat.Size = new System.Drawing.Size(89, 61);
+            this.tbxMinaResultat.TabIndex = 9;
             // 
-            // label1
+            // btnGissa
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(321, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Mina resultat";
+            this.btnGissa.Cursor = System.Windows.Forms.Cursors.Help;
+            this.btnGissa.Location = new System.Drawing.Point(151, 46);
+            this.btnGissa.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGissa.Name = "btnGissa";
+            this.btnGissa.Size = new System.Drawing.Size(66, 33);
+            this.btnGissa.TabIndex = 8;
+            this.btnGissa.Text = "Gissa";
+            this.btnGissa.UseVisualStyleBackColor = false;
+            this.btnGissa.Click += new System.EventHandler(this.btnGissa_Click);
             // 
-            // label2
+            // tbxGissa
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 16);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Datorns tal:";
+            this.tbxGissa.Location = new System.Drawing.Point(68, 54);
+            this.tbxGissa.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxGissa.Name = "tbxGissa";
+            this.tbxGissa.Size = new System.Drawing.Size(51, 21);
+            this.tbxGissa.TabIndex = 7;
+            // 
+            // lblResultat
+            // 
+            this.lblResultat.Location = new System.Drawing.Point(7, 86);
+            this.lblResultat.Margin = new System.Windows.Forms.Padding(2);
+            this.lblResultat.Name = "lblResultat";
+            this.lblResultat.Size = new System.Drawing.Size(114, 21);
+            this.lblResultat.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 61);
+            this.label3.Location = new System.Drawing.Point(4, 54);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 16);
+            this.label3.Size = new System.Drawing.Size(70, 14);
             this.label3.TabIndex = 4;
             this.label3.Text = "Gissa ett tal:";
             // 
-            // textBox1
+            // label2
             // 
-            this.textBox1.Location = new System.Drawing.Point(9, 99);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(151, 22);
-            this.textBox1.TabIndex = 5;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(4, 26);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 14);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Datorns tal:";
             // 
-            // textBox2
+            // label1
             // 
-            this.textBox2.Location = new System.Drawing.Point(91, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(68, 22);
-            this.textBox2.TabIndex = 6;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(241, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 14);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Mina resultat";
             // 
-            // textBox3
+            // gbxSpeldata
             // 
-            this.textBox3.Location = new System.Drawing.Point(91, 61);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(67, 22);
-            this.textBox3.TabIndex = 7;
+            this.gbxSpeldata.Controls.Add(this.lbxStörstaTalet);
+            this.gbxSpeldata.Controls.Add(this.label4);
+            this.gbxSpeldata.Location = new System.Drawing.Point(131, 93);
+            this.gbxSpeldata.Margin = new System.Windows.Forms.Padding(2);
+            this.gbxSpeldata.Name = "gbxSpeldata";
+            this.gbxSpeldata.Padding = new System.Windows.Forms.Padding(2);
+            this.gbxSpeldata.Size = new System.Drawing.Size(217, 74);
+            this.gbxSpeldata.TabIndex = 5;
+            this.gbxSpeldata.TabStop = false;
+            this.gbxSpeldata.Text = "Speldata";
             // 
-            // button3
+            // lbxStörstaTalet
             // 
-            this.button3.Location = new System.Drawing.Point(201, 53);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(88, 38);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(175, 108);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 82);
-            this.groupBox2.TabIndex = 5;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Speldata";
+            this.lbxStörstaTalet.FormattingEnabled = true;
+            this.lbxStörstaTalet.ItemHeight = 14;
+            this.lbxStörstaTalet.Location = new System.Drawing.Point(92, 13);
+            this.lbxStörstaTalet.Name = "lbxStörstaTalet";
+            this.lbxStörstaTalet.Size = new System.Drawing.Size(120, 46);
+            this.lbxStörstaTalet.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 38);
+            this.label4.Location = new System.Drawing.Point(4, 33);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 16);
+            this.label4.Size = new System.Drawing.Size(72, 14);
             this.label4.TabIndex = 0;
             this.label4.Text = "Strösta talet:";
             // 
+            // lblDatornsTal
+            // 
+            this.lblDatornsTal.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblDatornsTal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblDatornsTal.Location = new System.Drawing.Point(76, 26);
+            this.lblDatornsTal.Name = "lblDatornsTal";
+            this.lblDatornsTal.Size = new System.Drawing.Size(35, 13);
+            this.lblDatornsTal.TabIndex = 10;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(867, 597);
+            this.Controls.Add(this.gbxSpeldata);
+            this.Controls.Add(this.gbxSpelet);
+            this.Controls.Add(this.btnSpelaIgen);
+            this.Controls.Add(this.btnStartaSpelet);
             this.Controls.Add(this.pictureBox1);
+            this.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.gbxSpelet.ResumeLayout(false);
+            this.gbxSpelet.PerformLayout();
+            this.gbxSpeldata.ResumeLayout(false);
+            this.gbxSpeldata.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -202,19 +236,20 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnStartaSpelet;
+        private System.Windows.Forms.Button btnSpelaIgen;
+        private System.Windows.Forms.GroupBox gbxSpelet;
+        private System.Windows.Forms.Button btnGissa;
+        private System.Windows.Forms.TextBox tbxGissa;
+        private System.Windows.Forms.TextBox lblResultat;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbxSpeldata;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tbxMinaResultat;
+        private System.Windows.Forms.ListBox lbxStörstaTalet;
+        private System.Windows.Forms.Label lblDatornsTal;
     }
 }
 
