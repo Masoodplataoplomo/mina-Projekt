@@ -25,7 +25,7 @@ namespace uppgift_10._5
             {
                 char ch = char.ToUpper(text[0]);
                 string result = text.Remove(0, 1).Insert(0, ch.ToString());
-               tbxVersal.Text = (" " + result);
+                tbxVersal.Text = (" " + result);
             }
             else
             {
