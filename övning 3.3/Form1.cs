@@ -28,7 +28,7 @@ namespace övning_3._3
             medel = Kvadrat / (double)3;
             String text2 = medel.ToString();
             lblMedel.Text = text2;  
-            lblSumma.Text = text;
+            lblSumma.Text = text; 
             
 
         }
